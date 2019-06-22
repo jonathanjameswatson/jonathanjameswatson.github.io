@@ -1,0 +1,42 @@
+@import '~bulma/sass/utilities/_all';
+@import url('https://fonts.googleapis.com/css?family=Federant|Patua+One&display=swap');
+
+$black: #04070d;
+$white: #e0fbfc;
+$turquoise: #55dde0;
+$cyan: #146099;
+$blue: #233c7c;
+$purple: #2b1c66;
+$red: #f02d37;
+$yellow: #fcb549;
+
+$box-background-color: $cyan;
+$card-background-color: $blue;
+$title-color: $white;
+$subtitle-color: $white;
+$link: $turquoise;
+$link-hover: $white;
+
+$title-family: Federant, cursive;
+$subtitle-family: 'Patua One', cursive;
+
+.p5Canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+#p5-canvas {
+  background-color: $white;
+  z-index: -2;
+}
+
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/elements/title.sass";
+@import "~bulma/sass/elements/box.sass";
+@import "~bulma/sass/layout/hero.sass";
+@import "~bulma/sass/layout/section.sass";
+@import "~bulma/sass/grid/columns.sass";
+@import "~bulma/sass/components/card.sass";
