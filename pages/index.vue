@@ -31,7 +31,7 @@ import Project from '~/components/Project.vue';
 
 let background;
 if (process.browser) {
-  background = require('@/js/background.js');
+  background = require('@/assets/js/background.js');
 }
 export default {
   components: {
