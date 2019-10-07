@@ -28,7 +28,7 @@ $title-family: $primary-font;
 $title-weight: $weight-normal;
 $subtitle-family: $primary-font;
 
-@import '~bulma/sass/utilities/_all';
+@import '~bulma/sass/utilities/_all.sass';
 
 html {
   background-color: $body-background-color;
@@ -81,4 +81,9 @@ html {
   right: 0;
 }
 
-@import "~bulma";
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/elements/title.sass";
+@import "~bulma/sass/elements/box.sass";
+@import "~bulma/sass/elements/container.sass";
+@import "~bulma/sass/layout/section.sass";
+@import "~bulma/sass/grid/columns.sass";
