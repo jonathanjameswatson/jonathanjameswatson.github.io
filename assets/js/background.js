@@ -1,5 +1,5 @@
 const bgColour = '#e0fbfc';
-const sphereColour = '#55dde0';
+const sphereColour = '#fff';
 
 const diameterRatio = 0.005;
 const spheres = 20;
@@ -45,8 +45,7 @@ export function main(_p5) {
   }
 
   p5.setup = () => {
-    const canvas = p5.createCanvas(p5.windowWidth, p5.windowHeight, p5.WEBGL);
-    canvas.parent('p5-canvas');
+    p5.createCanvas(p5.windowWidth, p5.windowHeight, p5.WEBGL);
 
     changeSpheres(p5.width, p5.height);
 

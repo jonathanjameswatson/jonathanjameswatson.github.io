@@ -1,34 +1,24 @@
 <template>
-  <div class="column has-text-centered is-one-third">
-    <div class="card">
-      <div class="card-image">
-        <figure class="image is-2by1">
-          <img
-            :src="`img/${project.name.toLowerCase().replace(/\s/g, '')}.png`"
-            :alt="project.name"
-          />
-        </figure>
-      </div>
-      <div class="card-content">
-        <h1 class="subtitle is-4">{{ project.name }}</h1>
-      </div>
-      <div class="card-footer">
-        <project-link
-          v-for="link in project.links"
-          :key="link.key"
-          :link="link"
-        ></project-link>
+  <a :href="project.link" target="_blank">
+    <div class="project">
+      <img :src="project | url" :alt="project.name" class="project-abs" />
+      <div class="columns is-centered is-vcentered is-mobile project-abs">
+        <div class="column has-text-centered is-narrow">
+          <div class="box has-text-white">
+            <h1 class="subtitle">{{ project.name }}</h1>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
-import ProjectLink from '~/components/ProjectLink.vue';
-
 export default {
-  components: {
-    ProjectLink
+  filters: {
+    url(project) {
+      return `img/${project.name.toLowerCase().replace(/\s/g, '')}.png`;
+    }
   },
   props: { project: Object }
 };

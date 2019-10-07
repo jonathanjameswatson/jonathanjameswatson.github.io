@@ -1,25 +1,38 @@
-@import '~bulma/sass/utilities/_all';
 @import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
 
-$black: #04070d;
-$white: #e0fbfc;
+$black: #000;
+$white: #fff;
+$light-blue: #e0fbfc;
 $turquoise: #55dde0;
-$cyan: #146099;
-$blue: #233c7c;
+$blue: #146099;
+$dark-blue: #233c7c;
 $purple: #2b1c66;
 $red: #f02d37;
 $yellow: #fcb549;
 
-$box-background-color: $cyan;
-$card-background-color: $blue;
-$title-color: $white;
+$primary-font: 'Patua One', sans-serif;
+
+@import '~bulma/sass/utilities/initial-variables.sass';
+
+$primary: #e0fbfc;
+$body-background-color: $light-blue;
+$box-shadow: 0;
+$title-color: $black;
 $subtitle-color: $white;
 $link: $turquoise;
-$link-hover: $white;
+$link-hover: $blue;
 
-$title-family: 'Patua One', cursive;
+$flip-background-color: $black;
+
+$title-family: $primary-font;
 $title-weight: $weight-normal;
-$subtitle-family: 'Patua One', cursive;
+$subtitle-family: $primary-font;
+
+@import '~bulma/sass/utilities/_all';
+
+html {
+  background-color: $body-background-color;
+}
 
 .p5Canvas {
   position: absolute;
@@ -29,15 +42,43 @@ $subtitle-family: 'Patua One', cursive;
   z-index: -1;
 }
 
-#p5-canvas {
-  background-color: $white;
-  z-index: -2;
+.project {
+  padding-top: 50%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: $radius-large;
 }
 
-@import "~bulma/sass/base/_all.sass";
-@import "~bulma/sass/elements/title.sass";
-@import "~bulma/sass/elements/box.sass";
-@import "~bulma/sass/layout/hero.sass";
-@import "~bulma/sass/layout/section.sass";
-@import "~bulma/sass/grid/columns.sass";
-@import "~bulma/sass/components/card.sass";
+.project .box {
+  background-color: $flip-background-color;
+  user-select: none;
+
+  transition: transform 0.1s;
+}
+
+.project img {
+  filter: blur(1px);
+  transition: transform 0.2s ease-in, filter 0.2s ease-in;
+}
+
+.project:hover {
+  .box {
+    transform: rotateX(90deg);
+  }
+
+  img {
+    filter: blur(0);
+    transform: scale(1.03);
+  }
+}
+
+.project-abs {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@import "~bulma";

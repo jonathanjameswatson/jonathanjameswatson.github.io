@@ -1,29 +1,34 @@
 <template>
-  <section>
-    <section id="intro" class="hero is-fullheight">
-      <div id="p5-canvas" class="hero-body">
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column has-text-centered is-narrow">
-              <div class="box">
-                <h1 class="title is-1">jonathan<wbr />james<wbr />watson</h1>
+  <div>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-narrow">
+            <div class="box">
+              <h1 class="title is-1">jonathan<wbr />james<wbr />watson</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered is-multiline">
+          <div class="column is-11">
+            <div class="columns is-multiline">
+              <div
+                v-for="project in projects"
+                :key="project.key"
+                class="column is-6"
+              >
+                <project :project="project" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="section">
-      <div class="columns is-multiline">
-        <project
-          v-for="project in projects"
-          :key="project.key"
-          :project="project"
-        ></project>
-      </div>
-    </section>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -33,6 +38,7 @@ let background;
 if (process.browser) {
   background = require('@/assets/js/background.js');
 }
+
 export default {
   components: {
     Project
@@ -41,72 +47,30 @@ export default {
     return {
       projects: [
         {
-          name: 'Exhaustive search calculator',
-          links: [
-            {
-              name: 'Website',
-              href: 'exhaustive-search-calculator'
-            },
-            {
-              name: 'GitHub',
-              href:
-                'https://github.com/jonathanjameswatson/exhaustive-search-calculator'
-            }
-          ]
-        },
-        {
-          name: 'Numerically solving equations',
-          links: [
-            {
-              name: 'Website',
-              href: 'numerically-solving-equations'
-            },
-            {
-              name: 'GitHub',
-              href:
-                'https://github.com/jonathanjameswatson/numerically-solving-equations'
-            }
-          ]
-        },
-        {
           name: 'Truth Trick',
-          links: [
-            {
-              name: 'Website',
-              href: 'truth-trick'
-            },
-            {
-              name: 'GitHub',
-              href: 'https://github.com/jonathanjameswatson/truth-trick'
-            }
-          ]
+          link: 'https://github.com/jonathanjameswatson/truth-trick'
         },
         {
-          name: 'Maths Race',
-          links: [
-            {
-              name: 'GitHub',
-              href: 'https://github.com/jonathanjameswatson/maths-race'
-            }
-          ]
+          name: 'Exhaustive search calculator',
+          link:
+            'https://github.com/jonathanjameswatson/exhaustive-search-calculator'
         },
         {
           name: 'bHive',
-          links: [
-            {
-              name: 'GitHub',
-              href: 'https://github.com/CodeGuild-co/bHive'
-            }
-          ]
+          link: 'https://github.com/CodeGuild-co/bHive'
+        },
+        {
+          name: 'Numerically solving equations',
+          link:
+            'https://github.com/jonathanjameswatson/numerically-solving-equations'
+        },
+        {
+          name: 'Maths Race',
+          link: 'https://github.com/jonathanjameswatson/maths-race'
         },
         {
           name: 'My GitHub',
-          links: [
-            {
-              name: 'Link',
-              href: 'https://github.com/jonathanjameswatson'
-            }
-          ]
+          link: 'https://github.com/jonathanjameswatson'
         }
       ]
     };
