@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'pwa',
+  mode: 'spa',
   /*
    ** Headers of the page
    */
