@@ -36,18 +36,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-
-  styleResources: {
-    scss: [] // '~assets/scss/main.scss']
-  },
-
-  modules: [
-    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/style-resources',
-    '@nuxtjs/pwa',
-    '@nuxtjs/eslint-module'
-  ],
-
+  modules: ['@nuxtjs/pwa', '@nuxtjs/eslint-module'],
   /*
    ** Build configuration
    */
