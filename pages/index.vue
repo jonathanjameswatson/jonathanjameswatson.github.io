@@ -28,16 +28,18 @@
         </div>
       </div>
     </section>
+    <canvas
+      class="glslCanvas"
+      data-fragment-url="background.frag"
+      width="640"
+      height="360"
+    >
+    </canvas>
   </div>
 </template>
 
 <script>
 import Project from '~/components/Project.vue';
-
-let background;
-if (process.browser) {
-  background = require('@/assets/js/background.js');
-}
 
 export default {
   components: {
@@ -74,10 +76,6 @@ export default {
         }
       ]
     };
-  },
-  mounted() {
-    const P5 = require('p5');
-    (() => new P5(background.main))();
   }
 };
 </script>

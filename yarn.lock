@@ -4923,6 +4923,13 @@ globule@^1.0.0:
     lodash "~4.17.10"
     minimatch "~3.0.2"
 
+glslCanvas@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/glslCanvas/-/glslCanvas-0.1.7.tgz#a56e64d196f23302aa18ee5dd90ada54f0afbb19"
+  integrity sha512-XfffgypwxwzobcfJJ5nOnkhdqmHIgFcTyofWE0Eb/0xorYiGtZOvZ3Yf2KBr8cVMt9iHYiSfaohPwJoEjWVDSQ==
+  dependencies:
+    xhr "^2.5.0"
+
 got@^6.7.1:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/got/-/got-6.7.1.tgz#240cd05785a9a18e561dc1b44b41c763ef1e8db0"
@@ -7574,11 +7581,6 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
-p5@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/p5/-/p5-0.8.0.tgz#af4cd2f25b2e77023dff24d845cbdbdaa47d4fd2"
-  integrity sha512-X415HATmOwcbWpgXTCHyDNdcGTNuzuZFaW9GoOsZd3PFrTmugdf+xLr9AO+rGHxBOFgdqfaj766vJeH1wPkCrQ==
-
 package-json@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/package-json/-/package-json-4.0.1.tgz#8869a0401253661c4c4ca3da6c2121ed555f5eed"
@@ -9468,11 +9470,6 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-simplex-noise@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/simplex-noise/-/simplex-noise-2.4.0.tgz#81b3458fb22dccc3bc8dd9a977c73797f86f523a"
-  integrity sha512-OjyDWm/QZjVbMrPxDVi9b2as+SeNn9EBXlrWVRlFW+TSyWMSXouDryXkQN0vf5YP+QZKobrmkvx1eQYPLtuqfw==
-
 sisteransi@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.3.tgz#98168d62b79e3a5e758e27ae63c4a053d748f4eb"
@@ -11130,7 +11127,7 @@ xdg-basedir@^3.0.0:
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
   integrity sha1-SWsswQnsqNus/i3HK2A8F8WHCtQ=
 
-xhr@^2.0.1:
+xhr@^2.0.1, xhr@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/xhr/-/xhr-2.5.0.tgz#bed8d1676d5ca36108667692b74b316c496e49dd"
   integrity sha512-4nlO/14t3BNUZRXIXfXe+3N6w3s1KoxcJUUURctd64BLRe67E4gRwp4PjywtDY72fXpZ1y6Ch0VZQRY/gMPzzQ==

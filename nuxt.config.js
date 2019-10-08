@@ -13,6 +13,12 @@ module.exports = {
         name: 'description',
         content: process.env.npm_package_description || ''
       }
+    ],
+    script: [
+      {
+        src:
+          'https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js'
+      }
     ]
   },
   /*
