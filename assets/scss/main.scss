@@ -62,6 +62,7 @@ html {
 .project img {
   filter: blur(1px);
   transition: transform 0.2s ease-in, filter 0.2s ease-in;
+  width: 100%;
 }
 
 .project:hover {
