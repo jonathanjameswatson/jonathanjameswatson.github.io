@@ -28,13 +28,7 @@
         </div>
       </div>
     </section>
-    <canvas
-      class="glslCanvas"
-      data-fragment-url="background.frag"
-      width="640"
-      height="360"
-    >
-    </canvas>
+    <canvas class="glslCanvas" data-fragment-url="background.frag" />
   </div>
 </template>
 
@@ -76,6 +70,16 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    this.resizeCanvas();
+  },
+  methods: {
+    resizeCanvas() {
+      const canvas = document.getElementsByClassName('glslCanvas')[0];
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
   }
 };
 </script>
