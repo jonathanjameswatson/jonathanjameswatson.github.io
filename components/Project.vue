@@ -4,7 +4,7 @@
       <img :src="project | url" :alt="project.name" class="project-abs" />
       <div class="columns is-centered is-vcentered is-mobile project-abs">
         <div class="column has-text-centered is-narrow">
-          <div class="box has-text-white">
+          <div class="box has-text-white" :class="randomBox">
             <h1 class="subtitle">{{ project.name }}</h1>
           </div>
         </div>
@@ -20,6 +20,14 @@ export default {
       return `img/${project.name.toLowerCase().replace(/\s/g, '')}.png`;
     }
   },
-  props: { project: Object }
+  props: { project: Object },
+  computed: {
+    randomBox() {
+      const transitions = ['rotateX', 'rotateY', 'zoom'];
+      const transition =
+        transitions[Math.floor(Math.random() * transitions.length)];
+      return [transition];
+    }
+  }
 };
 </script>

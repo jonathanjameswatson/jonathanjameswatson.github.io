@@ -19,7 +19,7 @@
               <div
                 v-for="project in projects"
                 :key="project.key"
-                class="column is-6"
+                class="column is-4"
               >
                 <project :project="project" />
               </div>
