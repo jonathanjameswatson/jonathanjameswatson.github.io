@@ -44,12 +44,12 @@ export default {
       projects: [
         {
           name: 'Truth Trick',
-          link: 'https://github.com/jonathanjameswatson/truth-trick'
+          link: 'https://jonathanjameswatson.github.io/truth-trick/'
         },
         {
           name: 'Exhaustive search calculator',
           link:
-            'https://github.com/jonathanjameswatson/exhaustive-search-calculator'
+            'https://jonathanjameswatson.github.io/exhaustive-search-calculator/'
         },
         {
           name: 'bHive',
@@ -58,7 +58,7 @@ export default {
         {
           name: 'Numerically solving equations',
           link:
-            'https://github.com/jonathanjameswatson/numerically-solving-equations'
+            'https://jonathanjameswatson.github.io/numerically-solving-equations/'
         },
         {
           name: 'Maths Race',
