@@ -36,7 +36,12 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/eslint-module'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/eslint-module',
+    '@bazzite/nuxt-optimized-images',
+    'nuxt-compress'
+  ],
   /*
    ** Build configuration
    */
