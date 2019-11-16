@@ -2,7 +2,9 @@
 
 > A website for my projects
 
-## Build Setup
+![GIF demo](static/demo.gif)
+
+## Development
 
 ``` bash
 # install dependencies
@@ -11,12 +13,13 @@ $ yarn install
 # serve with hot reload at localhost:3000
 $ yarn run dev
 
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
 # generate static project
 $ yarn run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Built With
+
+* [NuxtJS](https://github.com/nuxt/nuxt.js) - Web framework
+* [Bulma](https://github.com/jgthms/bulma) - CSS framework
+* [Sass](https://github.com/sass/sass) - CSS preprocessor
+* [glslCanvas](https://github.com/patriciogonzalezvivo/glslCanvas) - Used to load GLSL background
