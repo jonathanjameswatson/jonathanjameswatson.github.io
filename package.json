@@ -15,7 +15,7 @@
     "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
-    "@bazzite/nuxt-optimized-images": "^0.2.1",
+    "@bazzite/nuxt-optimized-images": "^0.2.2",
     "@nuxtjs/bulma": "^1.2.1",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
