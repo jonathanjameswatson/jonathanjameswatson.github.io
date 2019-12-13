@@ -50,30 +50,37 @@ html {
   overflow: hidden;
   border-radius: $radius-large;
   background-color: $white;
-}
 
-.project .box {
-  background-color: $flip-background-color;
-  user-select: none;
+  @include tablet {
+    .rotateX {
+      transform: rotateX(90deg);
+    }
 
-  transition: transform 0.2s cubic-bezier(0.075, 0.820, 0.165, 1.000);
-}
+    .rotateY {
+      transform: rotateY(90deg);
+    }
 
-.project img {
-  width: 100%;
-}
+    .zoom {
+      transform: scaleX(0) scaleY(0.5);
+    }
 
-.project:hover {
-  .rotateX {
-    transform: rotateX(90deg);
+    :hover .box {
+      transform: none;
+    }
   }
 
-  .rotateY {
-    transform: rotateY(90deg);
+  .box {
+    user-select: none;
+    background-color: $flip-background-color;
+    transition: transform 0.2s cubic-bezier(0.075, 0.820, 0.165, 1.000);
   }
 
-  .zoom {
-    transform: scaleX(0) scaleY(0.5);
+  .column {
+    max-width: 90%;
+  }
+
+  img {
+    width: 100%;
   }
 }
 

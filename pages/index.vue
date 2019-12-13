@@ -19,7 +19,7 @@
               <div
                 v-for="project in projects"
                 :key="project.key"
-                class="column is-4"
+                class="column is-4-desktop is-3-widescreen is-half"
               >
                 <project :project="project" />
               </div>
@@ -47,9 +47,8 @@ export default {
           link: 'https://jonathanjameswatson.github.io/truth-trick/'
         },
         {
-          name: 'Exhaustive search calculator',
-          link:
-            'https://jonathanjameswatson.github.io/exhaustive-search-calculator/'
+          name: 'kwzz',
+          link: 'https://github.com/jonathanjameswatson/kwzz'
         },
         {
           name: 'bHive',
@@ -63,6 +62,16 @@ export default {
         {
           name: 'Maths Race',
           link: 'https://github.com/jonathanjameswatson/maths-race'
+        },
+        {
+          name: 'Exhaustive search calculator',
+          link:
+            'https://jonathanjameswatson.github.io/exhaustive-search-calculator/'
+        },
+        {
+          name: 'This website',
+          link:
+            'https://github.com/jonathanjameswatson/jonathanjameswatson.github.io'
         },
         {
           name: 'My GitHub',
