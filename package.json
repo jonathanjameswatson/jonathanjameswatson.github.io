@@ -22,7 +22,7 @@
     "express": "^4.16.4",
     "imagemin-pngquant": "^8.0.0",
     "lqip-loader": "^2.2.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.11.0",
     "nuxt-compress": "^1.0.2"
   },
   "devDependencies": {
