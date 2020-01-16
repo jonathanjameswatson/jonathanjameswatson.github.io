@@ -4,16 +4,6 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'jonathanjameswatson',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
-      }
-    ],
     script: [
       {
         src:
@@ -29,10 +19,6 @@ module.exports = {
    ** Global CSS
    */
   css: ['~assets/scss/main.scss'],
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: [],
   /*
    ** Nuxt.js modules
    */
@@ -52,10 +38,23 @@ module.exports = {
           customProperties: false
         }
       }
+    }
+  },
+  /*
+   ** PWA configuration
+   */
+  pwa: {
+    meta: {
+      name: 'jonathanjameswatson',
+      ogHost: 'https://jonathanjameswatson.com',
+      ogImage: '/preview.png',
+      twitterCard: 'summary_large_image'
     },
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {}
+    manifest: {
+      name: 'jonathanjameswatson',
+      short_name: 'jonathanjameswatson',
+      theme_color: '#fff',
+      display: 'fullscreen'
+    }
   }
 };
