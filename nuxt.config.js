@@ -47,7 +47,7 @@ export default {
   meta: {
     name: 'jonathanjameswatson',
     ogHost: 'https://jonathanjameswatson.com',
-    ogImage: 'preview.png',
+    ogImage: '/preview.png',
     twitterCard: 'summary_large_image'
   },
   manifest: {
