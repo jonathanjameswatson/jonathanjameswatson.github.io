@@ -44,7 +44,7 @@ export default {
       projects: [
         {
           name: 'Truth Trick',
-          link: 'https://jonathanjameswatson.github.io/truth-trick/'
+          link: 'https://jonathanjameswatson.com/truth-trick/'
         },
         {
           name: 'kwzz',
@@ -56,8 +56,7 @@ export default {
         },
         {
           name: 'Numerically solving equations',
-          link:
-            'https://jonathanjameswatson.github.io/numerically-solving-equations/'
+          link: 'https://jonathanjameswatson.com/numerically-solving-equations/'
         },
         {
           name: 'Maths Race',
@@ -65,8 +64,7 @@ export default {
         },
         {
           name: 'Exhaustive search calculator',
-          link:
-            'https://jonathanjameswatson.github.io/exhaustive-search-calculator/'
+          link: 'https://jonathanjameswatson.com/exhaustive-search-calculator/'
         },
         {
           name: 'This website',
