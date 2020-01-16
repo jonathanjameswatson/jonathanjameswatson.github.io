@@ -1,9 +1,10 @@
-module.exports = {
-  mode: 'spa',
+export default {
+  mode: 'universal',
   /*
    ** Headers of the page
    */
   head: {
+    title: 'jonathanjameswatson',
     script: [
       {
         src:
@@ -43,18 +44,16 @@ module.exports = {
   /*
    ** PWA configuration
    */
-  pwa: {
-    meta: {
-      name: 'jonathanjameswatson',
-      ogHost: 'https://jonathanjameswatson.com',
-      ogImage: '/preview.png',
-      twitterCard: 'summary_large_image'
-    },
-    manifest: {
-      name: 'jonathanjameswatson',
-      short_name: 'jonathanjameswatson',
-      theme_color: '#fff',
-      display: 'fullscreen'
-    }
+  meta: {
+    name: 'jonathanjameswatson',
+    ogHost: 'https://jonathanjameswatson.com',
+    ogImage: 'preview.png',
+    twitterCard: 'summary_large_image'
+  },
+  manifest: {
+    name: 'jonathanjameswatson',
+    short_name: 'jonathanjameswatson',
+    theme_color: '#fff',
+    display: 'fullscreen'
   }
 };
