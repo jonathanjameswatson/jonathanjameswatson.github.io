@@ -28,7 +28,6 @@
         </div>
       </div>
     </section>
-    <canvas class="glslCanvas" data-fragment-url="background.frag" />
   </div>
 </template>
 
@@ -43,20 +42,20 @@ export default {
     return {
       projects: [
         {
-          name: 'Truth Trick',
-          link: 'https://jonathanjameswatson.com/truth-trick/'
-        },
-        {
           name: 'kwzz',
           link: 'https://github.com/jonathanjameswatson/kwzz'
         },
         {
-          name: 'bHive',
-          link: 'https://github.com/CodeGuild-co/bHive'
-        },
-        {
           name: 'Numerically solving equations',
           link: 'https://jonathanjameswatson.com/numerically-solving-equations/'
+        },
+        {
+          name: 'Truth Trick',
+          link: 'https://jonathanjameswatson.com/truth-trick/'
+        },
+        {
+          name: 'bHive',
+          link: 'https://github.com/CodeGuild-co/bHive'
         },
         {
           name: 'Maths Race',
@@ -77,16 +76,6 @@ export default {
         }
       ]
     };
-  },
-  mounted() {
-    this.resizeCanvas();
-  },
-  methods: {
-    resizeCanvas() {
-      const canvas = document.getElementsByClassName('glslCanvas')[0];
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
   }
 };
 </script>

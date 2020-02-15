@@ -1,19 +1,6 @@
 export default {
   mode: 'universal',
   /*
-   ** Headers of the page
-   */
-  head: {
-    title: 'jonathanjameswatson',
-    script: [
-      {
-        src:
-          'https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.min.js',
-        defer: true
-      }
-    ]
-  },
-  /*
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
