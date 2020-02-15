@@ -8,7 +8,8 @@ export default {
     script: [
       {
         src:
-          'https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js'
+          'https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.min.js',
+        defer: true
       }
     ]
   },
