@@ -11,8 +11,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=master --cleanup"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@bazzite/nuxt-optimized-images": "^0.2.1",
@@ -47,7 +46,6 @@
     "node-sass": "^4.12.0",
     "nodemon": "^1.18.9",
     "prettier": "^1.16.4",
-    "push-dir": "^0.4.1",
     "sass-loader": "^7.1.0",
     "vue-jest": "^3.0.3"
   }
