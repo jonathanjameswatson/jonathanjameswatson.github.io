@@ -14,7 +14,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@bazzite/nuxt-optimized-images": "^0.3.0",
+    "@bazzite/nuxt-optimized-images": "^0.4.0",
     "@nuxtjs/bulma": "^1.2.7",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "cross-env": "^7.0.2",
