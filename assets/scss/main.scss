@@ -2,8 +2,6 @@
 
 @import '~bulma/sass/utilities/_all.sass';
 
-$black: #000;
-$white: #fff;
 $light-blue: #e0fbfc;
 $turquoise: #55dde0;
 $blue: #146099;
@@ -15,10 +13,10 @@ $yellow: #fcb549;
 $primary-font: 'Patua One', sans-serif;
 
 $primary: #e0fbfc;
+$link: $blue;
 
-$body-background-color: $light-blue;
-$link: $turquoise;
-$link-hover: $blue;
+$body-background-color: $scheme-main-ter;
+$footer-background-color: $scheme-main-ter;
 $flip-background-color: $scheme-invert;
 $title-color: $scheme-invert;
 $subtitle-color: $scheme-main;
@@ -27,76 +25,61 @@ $title-weight: $weight-normal;
 $subtitle-family: $primary-font;
 
 
+.box {
+  &.rotateX {
+    transform: rotateX(90deg);
+  }
+
+  &.rotateY {
+    transform: rotateY(90deg);
+  }
+
+  &.zoom {
+    transform: scaleX(0) scaleY(0.5);
+  }
+
+  &.translateXLeft {
+    transform: translateX(-150%)
+  }
+
+  &.translateXRight {
+    transform: translateX(150%)
+  }
+
+  &.translateY {
+    transform: translateY(150%)
+  }
+
+  transition: transform 1s cubic-bezier(0.075, 0.820, 0.165, 1.000) 0.1s;
+  height: 100%;
+}
+
+.hero {
+  overflow: hidden;
+}
 
 html {
-  background-color: $body-background-color;
-  background-image: repeating-linear-gradient(-45deg,
-    transparent,
-    transparent 2rem,
-    $scheme-main 2rem,
-    $scheme-main 2.5rem);
-  background-size: 200% 200%;
-  animation: slide 100s linear infinite;
+  scroll-snap-type: y proximity;
 }
 
-@keyframes slide {
-  100% {
-    background-position: 100% 100%;
-  }
+.start {
+  scroll-snap-align: center;
 }
 
-.project {
-  padding: 50% 0 0 0 !important;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: $radius-large;
-  background-color: $white;
-
-  @include tablet {
-    .rotateX {
-      transform: rotateX(90deg);
-    }
-
-    .rotateY {
-      transform: rotateY(90deg);
-    }
-
-    .zoom {
-      transform: scaleX(0) scaleY(0.5);
-    }
-
-    :hover .box {
-      transform: none;
-    }
-  }
-
-  .box {
-    user-select: none;
-    background-color: $flip-background-color;
-    transition: transform 0.2s cubic-bezier(0.075, 0.820, 0.165, 1.000);
-  }
-
-  .column {
-    max-width: 90%;
-  }
-
-  img {
-    width: 100%;
-  }
+.footer {
+  scroll-snap-align: end;
 }
 
-.project-abs {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.reverse-columns {
+  flex-direction: row-reverse !important;
 }
 
 @import "~bulma/sass/base/_all.sass";
 @import "~bulma/sass/elements/title.sass";
 @import "~bulma/sass/elements/box.sass";
 @import "~bulma/sass/elements/container.sass";
+@import "~bulma/sass/elements/image.sass";
 @import "~bulma/sass/layout/section.sass";
+@import "~bulma/sass/layout/hero.sass";
+@import "~bulma/sass/layout/footer.sass";
 @import "~bulma/sass/grid/columns.sass";

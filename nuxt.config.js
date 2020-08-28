@@ -17,6 +17,7 @@ export default {
     '@bazzite/nuxt-optimized-images',
     'nuxt-compress'
   ],
+  plugins: ['~plugins/vue.js'],
   /*
    ** Build configuration
    */
@@ -44,4 +45,4 @@ export default {
     theme_color: '#fff',
     display: 'fullscreen'
   }
-};
+}
