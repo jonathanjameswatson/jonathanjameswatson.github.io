@@ -49,7 +49,7 @@ import Project from '~/components/Project.vue'
 
 export default {
   components: {
-    Project
+    Project,
   },
   data() {
     return {
@@ -57,42 +57,42 @@ export default {
         {
           name: 'kwzz',
           link: 'https://github.com/jonathanjameswatson/kwzz',
-          colour: '#972867'
+          colour: '#972867',
         },
         {
           name: 'Numerically solving equations',
           link:
             'https://jonathanjameswatson.com/numerically-solving-equations/',
-          colour: '#FE3860'
+          colour: '#FE3860',
         },
         {
           name: 'Truth Trick',
           link: 'https://jonathanjameswatson.com/truth-trick/',
-          colour: '#FFFFFF'
+          colour: '#FFFFFF',
         },
         {
           name: 'bHive',
           link: 'https://github.com/CodeGuild-co/bHive',
-          colour: '#EBB92D'
+          colour: '#EBB92D',
         },
         {
           name: 'Maths Race',
           link: 'https://github.com/jonathanjameswatson/maths-race',
-          colour: '#6DF2CC'
+          colour: '#6DF2CC',
         },
         {
           name: 'This website',
           link:
             'https://github.com/jonathanjameswatson/jonathanjameswatson.github.io',
-          colour: '#FFFFFF'
+          colour: '#FFFFFF',
         },
         {
           name: 'Exhaustive search calculator',
           link: 'https://jonathanjameswatson.com/exhaustive-search-calculator/',
-          colour: '#E2EDFB'
-        }
-      ]
+          colour: '#E2EDFB',
+        },
+      ],
     }
-  }
+  },
 }
 </script>

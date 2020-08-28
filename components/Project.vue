@@ -33,7 +33,7 @@ export default {
       'rotateY',
       'zoom',
       'translateX',
-      'translateY'
+      'translateY',
     ]
     const translateX = this.left ? 'translateXLeft' : 'translateXRight'
     transitions.push(translateX)
@@ -50,7 +50,7 @@ export default {
     },
     leftClass() {
       return {
-        'reverse-columns': this.left
+        'reverse-columns': this.left,
       }
     },
     webp() {
@@ -62,12 +62,12 @@ export default {
       return require(`~/assets/img/${this.project.name
         .toLowerCase()
         .replace(/\s/g, '')}.png`)
-    }
+    },
   },
   methods: {
     visibilityChanged(visible) {
       this.visible = visible
-    }
-  }
+    },
+  },
 }
 </script>
