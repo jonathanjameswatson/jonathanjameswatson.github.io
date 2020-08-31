@@ -7,7 +7,7 @@
     <div class="column is-5">
       <a :href="project.link" target="_blank" rel="noopener">
         <figure class="image is-2by1">
-          <picture>
+          <picture class="project-image">
             <source :srcSet="webp" type="image/webp" />
             <img :src="png" :alt="project.name" class="image" />
           </picture>
