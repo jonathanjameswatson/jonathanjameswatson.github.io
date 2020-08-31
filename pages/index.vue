@@ -3,7 +3,7 @@
     <section class="hero is-fullheight start">
       <div class="hero-body">
         <div class="container">
-          <div class="columns is-centered">
+          <div class="columns is-centered is-mobile">
             <div class="column is-narrow">
               <div class="box">
                 <h1 class="title is-1">jonathan<br />james<br />watson</h1>
@@ -29,16 +29,7 @@
     </div>
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>
-          <strong>Bulma</strong> by
-          <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is
-          licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
-          website content is licensed
-          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-            >CC BY NC SA 4.0</a
-          >.
-        </p>
+        <p>Add <b>footer text</b> here</p>
       </div>
     </footer>
   </div>

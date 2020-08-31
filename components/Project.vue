@@ -17,7 +17,7 @@
     <div class="column is-1" />
     <div class="column has-text-centered is-6">
       <div :class="randomBox" class="box">
-        <h1 class="subtitle has-text-black">{{ project.name }}</h1>
+        <h1 class="subtitle is-3 has-text-black">{{ project.name }}</h1>
       </div>
     </div>
   </div>
