@@ -1,5 +1,6 @@
 export default {
   mode: 'universal',
+  target: 'static',
   /*
    ** Customize the progress-bar color
    */
@@ -11,12 +12,8 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/pwa',
-    '@nuxtjs/eslint-module',
-    '@bazzite/nuxt-optimized-images',
-    'nuxt-compress'
-  ],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/eslint-module', 'nuxt-compress'],
+  buildModules: ['@aceforth/nuxt-optimized-images'],
   /*
    ** Build configuration
    */
@@ -24,10 +21,10 @@ export default {
     postcss: {
       preset: {
         features: {
-          customProperties: false
-        }
-      }
-    }
+          customProperties: false,
+        },
+      },
+    },
   },
   /*
    ** PWA configuration
@@ -36,12 +33,18 @@ export default {
     name: 'jonathanjameswatson',
     ogHost: 'https://jonathanjameswatson.com',
     ogImage: '/preview.png',
-    twitterCard: 'summary_large_image'
+    twitterCard: 'summary_large_image',
   },
   manifest: {
     name: 'jonathanjameswatson',
     short_name: 'jonathanjameswatson',
     theme_color: '#fff',
-    display: 'fullscreen'
-  }
+    display: 'fullscreen',
+  },
+  /*
+   ** Optimized images configuration
+   */
+  optimizedImages: {
+    optimizeImages: true,
+  },
 };

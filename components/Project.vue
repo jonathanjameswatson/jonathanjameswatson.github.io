@@ -36,7 +36,7 @@ export default {
       return require(`~/assets/img/${this.project.name
         .toLowerCase()
         .replace(/\s/g, '')}.png`);
-    }
-  }
+    },
+  },
 };
 </script>

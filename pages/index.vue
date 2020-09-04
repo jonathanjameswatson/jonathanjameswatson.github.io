@@ -36,46 +36,47 @@ import Project from '~/components/Project.vue';
 
 export default {
   components: {
-    Project
+    Project,
   },
   data() {
     return {
       projects: [
         {
           name: 'kwzz',
-          link: 'https://github.com/jonathanjameswatson/kwzz'
+          link: 'https://github.com/jonathanjameswatson/kwzz',
         },
         {
           name: 'Numerically solving equations',
-          link: 'https://jonathanjameswatson.com/numerically-solving-equations/'
+          link:
+            'https://jonathanjameswatson.com/numerically-solving-equations/',
         },
         {
           name: 'Truth Trick',
-          link: 'https://jonathanjameswatson.com/truth-trick/'
+          link: 'https://jonathanjameswatson.com/truth-trick/',
         },
         {
           name: 'bHive',
-          link: 'https://github.com/CodeGuild-co/bHive'
+          link: 'https://github.com/CodeGuild-co/bHive',
         },
         {
           name: 'Maths Race',
-          link: 'https://github.com/jonathanjameswatson/maths-race'
+          link: 'https://github.com/jonathanjameswatson/maths-race',
         },
         {
           name: 'Exhaustive search calculator',
-          link: 'https://jonathanjameswatson.com/exhaustive-search-calculator/'
+          link: 'https://jonathanjameswatson.com/exhaustive-search-calculator/',
         },
         {
           name: 'This website',
           link:
-            'https://github.com/jonathanjameswatson/jonathanjameswatson.github.io'
+            'https://github.com/jonathanjameswatson/jonathanjameswatson.github.io',
         },
         {
           name: 'My GitHub',
-          link: 'https://github.com/jonathanjameswatson'
-        }
-      ]
+          link: 'https://github.com/jonathanjameswatson',
+        },
+      ],
     };
-  }
+  },
 };
 </script>
