@@ -25,6 +25,14 @@ $title-weight: $weight-normal;
 $subtitle-family: $primary-font;
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+.content h1 {
+  font-family: $title-family;
+  font-weight: $title-weight !important;
+}
 .box {
   &.rotateX {
     transform: rotateX(90deg);
@@ -79,6 +87,10 @@ html {
   color: transparent;
 }
 
+.tile.is-narrow {
+  flex: none;
+}
+
 @import "~bulma/sass/base/_all.sass";
 @import "~bulma/sass/helpers/_all.sass";
 @import "~bulma/sass/elements/title.sass";
@@ -90,3 +102,4 @@ html {
 @import "~bulma/sass/layout/hero.sass";
 @import "~bulma/sass/layout/footer.sass";
 @import "~bulma/sass/grid/columns.sass";
+@import "~bulma/sass/grid/tiles.sass";
