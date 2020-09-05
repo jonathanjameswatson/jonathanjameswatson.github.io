@@ -1,5 +1,7 @@
 export default {
   mode: 'universal',
+  target: 'static',
+  components: true,
   /*
    ** Customize the progress-bar color
    */
