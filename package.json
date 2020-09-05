@@ -14,28 +14,28 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@bazzite/nuxt-optimized-images": "^0.4.0",
     "@nuxtjs/bulma": "^1.3.0",
-    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "@nuxtjs/pwa": "^3.0.2",
     "cross-env": "^7.0.2",
     "express": "^4.16.4",
     "imagemin-pngquant": "^9.0.0",
-    "nuxt": "^2.14.1",
-    "nuxt-compress": "^2.0.0",
+    "nuxt": "^2.14.4",
+    "nuxt-compress": "^3.0.0",
     "vue-observe-visibility": "^0.4.6",
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.3.0",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
-    "@vue/test-utils": "^1.0.3",
+    "@vue/test-utils": "^1.0.5",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.6.0",
+    "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": ">=14.1.1",
     "eslint-plugin-import": ">=2.22.0",
-    "eslint-plugin-jest": ">=23.20.0",
+    "eslint-plugin-jest": ">=24.0.0",
     "eslint-plugin-node": ">=11.1.0",
     "eslint-plugin-nuxt": ">=1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
@@ -44,7 +44,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
-    "prettier": "^2.0.5",
-    "sass-loader": "^9.0.3"
+    "prettier": "^2.1.1",
+    "sass-loader": "^10.0.2"
   }
 }

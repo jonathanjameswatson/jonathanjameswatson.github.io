@@ -11,12 +11,11 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/pwa',
-    '@nuxtjs/eslint-module',
-    '@bazzite/nuxt-optimized-images',
-    'nuxt-compress',
-  ],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/eslint-module', 'nuxt-compress'],
+  buildModules: ['@aceforth/nuxt-optimized-images'],
+  /*
+   ** Plugins
+   */
   plugins: ['~plugins/vue.js'],
   /*
    ** Build configuration
@@ -44,5 +43,11 @@ export default {
     short_name: 'jonathanjameswatson',
     theme_color: '#fff',
     display: 'fullscreen',
+  },
+  /*
+   ** Optimized images configuration
+   */
+  optimizedImages: {
+    optimize: true,
   },
 }
