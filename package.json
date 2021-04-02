@@ -20,7 +20,7 @@
     "cross-env": "^7.0.2",
     "express": "^4.16.4",
     "imagemin-pngquant": "^9.0.1",
-    "nuxt": "^2.14.6",
+    "nuxt": "^2.15.4",
     "nuxt-compress": "^3.0.0",
     "vue-observe-visibility": "^0.4.6",
     "webp-loader": "^0.6.0"
