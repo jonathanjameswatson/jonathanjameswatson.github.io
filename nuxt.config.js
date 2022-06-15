@@ -1,6 +1,6 @@
 export default {
-  mode: 'universal',
   target: 'static',
+  components: true,
   /*
    ** Customize the progress-bar color
    */
@@ -13,7 +13,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: ['@nuxtjs/pwa', '@nuxtjs/eslint-module', 'nuxt-compress'],
-  buildModules: ['@aceforth/nuxt-optimized-images'],
+  buildModules: ['@nuxt/image'],
   /*
    ** Build configuration
    */
@@ -40,11 +40,5 @@ export default {
     short_name: 'jonathanjameswatson',
     theme_color: '#fff',
     display: 'fullscreen',
-  },
-  /*
-   ** Optimized images configuration
-   */
-  optimizedImages: {
-    optimizeImages: true,
   },
 };

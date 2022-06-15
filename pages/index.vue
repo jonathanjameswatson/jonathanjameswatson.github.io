@@ -21,7 +21,7 @@
                 :key="project.key"
                 class="column is-4-desktop is-3-widescreen is-half"
               >
-                <project :project="project" />
+                <project-card :project="project" />
               </div>
             </div>
           </div>
@@ -32,12 +32,7 @@
 </template>
 
 <script>
-import Project from '~/components/Project.vue';
-
 export default {
-  components: {
-    Project,
-  },
   data() {
     return {
       projects: [
@@ -47,8 +42,7 @@ export default {
         },
         {
           name: 'Numerically solving equations',
-          link:
-            'https://jonathanjameswatson.com/numerically-solving-equations/',
+          link: 'https://jonathanjameswatson.com/numerically-solving-equations/',
         },
         {
           name: 'Truth Trick',
@@ -68,8 +62,7 @@ export default {
         },
         {
           name: 'This website',
-          link:
-            'https://github.com/jonathanjameswatson/jonathanjameswatson.github.io',
+          link: 'https://github.com/jonathanjameswatson/jonathanjameswatson.github.io',
         },
         {
           name: 'My GitHub',
