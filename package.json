@@ -2,8 +2,10 @@
   "name": "jonathanjameswatson.github.io",
   "version": "1.0.0",
   "description": "A website for my projects",
+  "homepage": "https://jonathanjameswatson.com",
+  "license": "MIT",
   "author": "Jonathan Watson",
-  "private": true,
+  "repository": "github:jonathanjameswatson/jonathanjameswatson.github.io",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -30,5 +32,6 @@
     "prettier": "^2.7.0",
     "sass": "^1.52.3",
     "sass-loader": "^10.1.1"
-  }
+  },
+  "private": true
 }
